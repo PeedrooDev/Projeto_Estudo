@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin:  0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*header*/
+header{
+    padding: 30px 0;
+    background: #d6d6d6;
+}
+
+.logo h1{
+    color: black;
+    font-weight: 300;
+    float: left;
+    width: 132px;
+    height: 20px;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop  li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+nav.desktop a{
+    text-decoration: none;
+    color: black;
+}
+
+nav.desktop li.btn-nav{
+    padding: 3px 8px;
+    border-radius: 28px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.chamada-header{
+    padding: 110px 0;
+}
+
+
+.chamada-header h2{
+    font-size: 47px;
+    max-width: 400px;
+    color: black;
+    font-weight: normal;
+}
+
+.chamada-header  p{
+    color: black;
+    font-size:14px;
+    max-width: 680px;
+}
+.chamada-header form{
+    margin-top: 10px;
+}
+
+.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 100px;
+    width: 237px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.chamada-header input[type=email]:focus{outline: 0;}
+.chamada-header input[type=submit]{
+    display: inline-block;
+    border-radius: 100px;
+    width: 237px;
+    height: 35px;
+   background-color: #ff5f27;
+   border: 0;
+   color: aliceblue;
+   cursor:pointer;
+}
+
+
+
+
