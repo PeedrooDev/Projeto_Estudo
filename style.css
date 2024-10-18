@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     padding: 0;
@@ -16,16 +17,23 @@
     clear: both;
 }
 
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea{
+    appearance: none;
+    -webkit-appearance: none;
+}
 
 body{
+    overflow-x: hidden;
     background: rgba(224,244,244,0.5);
 }
 
 /*header*/
 header{
     padding: 30px 0;
-    /*background-image: url('../Img/bg.jpg');*/
-    background-color: #31475e;
+    background-image: url('../Img/bg.jpg');
     min-width: 450px;
     background-size: cover;
     background-position: center;
@@ -76,7 +84,7 @@ nav.mobile ul{
     left: 0;
     top: 0px;
     width: 100%;
-    padding: 70px 3px 10p ;
+    padding: 70px 3px 10px ;
     background: #31475e;
     display: none;
     text-align: center;
@@ -187,13 +195,7 @@ nav.mobile h3{
     line-height: 32px;
 }
 
-img{
-    height: 250px;
-    background: #ff5f27;
-    width: 45%;
-    float: left;
-    max-width:500px;
-}
+
 
 
 .descricao_danki3{
@@ -201,8 +203,7 @@ img{
 }
 
 .descricao_danki3 > .container{
-    /*background-image: url(../Img/bg2.jpg);*/
-    background-color: #31475e;
+    background-image: url(../Img/bg2.jpg);
     background-size: cover;
     min-height: 350px;
     max-width: 960px;
@@ -230,7 +231,7 @@ img{
 
 
 .servicos > .container{
-    max-width: 1000px;
+    max-width: 1100px;
 }
 .title_servicos{
     text-align: center;
@@ -243,20 +244,19 @@ img{
 
 .flex_servicos{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .box_servicos{
-    background: white;
-    padding: 20px;
+    border: 10px solid  rgba(224,244,244,0.5);
+    border-radius: 3px ;
+    background-color: #ffff;
     width: 33.3%;
 }
 
 .box_servicos > img{
-    height: 250px;
     width: 100%;
-    background: #4b3a34;
-    float: none;
+    
 
 }
 
@@ -276,17 +276,169 @@ img{
     font-size: 15px;
     margin: 8px 0;
     color: #6a7c92;
-
 }
 
 .box-servicos-wraper a{
+    text-decoration: none;
     text-align: center;
     display: block;
     width: 120px;
     color: #31475e;
-    padding: 5px 8px;
+    padding: 6px 12px;
     border-radius: 20px;
     border: 1px solid #31475e;
+}
+
+
+section.portifolio{
+    padding: 20px 0;
+    background: white;
+}
+
+section.portifolio h2{
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.portifolio >.container{
+    max-width: 960px;
+    padding: 15px 0;
+    background: #f7f7f7;
+}
+
+.empresas{
+    padding: 10px 0;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.empresas_single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px 0 1px ;
+    border-color: #eceeec;
+    width: 25%;
+}
+
+.empresas .empresas_single:last-child{
+    border: 1px solid #eceeec;
+}
+
+.formulario{
+    padding: 30px 0;
+}
+
+.formulario h2{
+    text-align: center;
+    font-weight: normal;
+    color: black;
+}
+
+.formulario form{
+    margin-top: 10px;
+}
+
+.formulario .container{
+    max-width: 960px;
+}
+
+.formulario input[type=text]{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #31475e;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+.formulario input[type=text]:focus{
+    outline: 0;
+}
+
+
+textarea{
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    border: 1px solid #31475e;
+    margin-top: 8px;
+    border-radius: 20px ;
+    padding: 10px;
+}
+
+input[type=submit]{
+    width: 130px;
+    height: 38px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: #ff5f27;
+    border-radius: 100px;
+}
+
+
+footer{
+    padding: 50px 0;
+}
+
+.box-footer{
+    width: 33.3%;
+    float: left;
+    padding: 0 15px;
+}
+
+.box-footer h2{
+    font-size: 22px;
+    color: #31475e;
+    font-weight: normal;
+}
+
+
+.box-footer p{
+    color: #6a7c92;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.box-footer form{
+    margin-top: 10px ;
+}
+
+.box-footer button{
+    max-width: 63px;
+    width: calc(20% - 10px);
+    margin-left: 10px;
+    height: 43px;
+    border: 1px solid #31475e;
+    border-radius: 20px;
+    background: white;
+}
+
+.box-footer i{
+    color:#31475e ;
+}
+
+.box-footer input{
+    width:80%;
+    height: 43px;
+    max-width: 200px;
+    padding-left: 10px;
+    border-radius: 100px ;
+    background: white;
+    border: solid 1px #bfbfbf;
+}
+
+.box-footer input[type=text]:focus{
+    outline: 0;
 }
 @media screen and (max-width: 1024px){
     nav.desktop{ display: none; }
@@ -315,6 +467,8 @@ img{
         bottom: auto;
     }
 
+
+
 }
 
 
@@ -329,5 +483,24 @@ img{
         margin: 0 auto;
         float: none;
         max-width: 500px;
+    }
+
+    .box_servicos{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .empresas_single{
+        max-width: 640px;
+        width: 100%;
+        margin: 15px auto;
+        border: 1px solid #eceeec;
+    }
+
+    .box-footer{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
     }
 }
