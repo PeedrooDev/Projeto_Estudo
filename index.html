@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Untitled-1.css">
   <title>AGENCIA DE MARKETING</title>
 </head>
 <body>
@@ -23,11 +24,23 @@
           </ul>
         </nav><!---nav desktop-->
 
+
+        <nav class="mobile">
+            <h3><i class="fa-solid fa-bars"></i></h3>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Contato</a></li>
+                <li class="btn-nav"><a href="">Quero um orçamento</a></li>
+              </ul>
+        </nav><!--nav mobile-->
+
+
         <div class="clear"></div>
       </div><!---menutopo-->
       <div class="chamada-header">
-        <h2>Voce vendendo mais com automação web.</h2>
-        <p>Nós criamos soluçoes de marketing para sua empresa vender mais, da melhor forma.</p>
+        <h2>Você vendendo mais <br>com automação web.</h2>
+        <p>Nós criamos soluções de marketing para sua empresa <br>vender mais, da melhor forma  </p>
         <form action="">
           <input type="email" required="" placeholder="seu email..">
           <input type="submit" name="acao" value="Quero saber masi!">
@@ -37,5 +50,48 @@
     </div><!---containre-->
   </header>
 
+
+  <section class="descricao_danki">
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur<b> adipisicing elit</b>.
+             Asperiores a minus quisquam aspernatur tenetur consectetur iure
+             empora magni animi esse obcaecati error consequatur, vitae sit 
+             necessitatibus.<b> Exercitationem </b>maiores obcaecati sed.
+        </p>
+    </div>
+  </section>
+
+  <section class="descricao_danki2">
+    <div class="container">
+        <div class="texto_descricao">
+            <h3>Nos maodsmaosmd</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda enim nam autem cupiditate eum ducimus illo molestiae earum iusto mollitia maxime qui, quod quos dolorem pariatur repellendus. Laborum, consequatur autem!</p>
+
+        </div>
+       
+        <img src="Img/mockup1.jpg" alt="">
+        <div class="clear"></div>
+    </div>
+  </section>
+
+  <section class="descricao_danki3">
+    <div class="container">
+        <div class="box-depoimento">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dolorum id odio minima sit aut iste velit neque accusantium? Magnam deleniti nisi laborum reiciendis, animi fugiat perspiciatis neque minima dolorem.
+            </p>
+<br>
+            <p><b>Jose Alberto</b></p>
+        </div>
+    </div>
+  </section>
+
+  <script src="Js/jquery.js"></script>
+  <script>
+    $('nav.mobile h3').click(function(){
+        $('nav.mobile').find('ul').slideToggle()
+    })
+  </script>
 </body>
 </html>
