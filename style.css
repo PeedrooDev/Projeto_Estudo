@@ -16,10 +16,16 @@
     clear: both;
 }
 
+
+body{
+    background: rgba(224,244,244,0.5);
+}
+
 /*header*/
 header{
     padding: 30px 0;
-    background-image: url('../Img/bg.jpg');
+    /*background-image: url('../Img/bg.jpg');*/
+    background-color: #31475e;
     min-width: 450px;
     background-size: cover;
     background-position: center;
@@ -28,7 +34,7 @@ header{
 .logo h1{
     position: relative;
     z-index: 998;
-    color: rgb(255, 255, 255);
+    color: rgb(246, 244, 244);
     font-weight: 300;
     float: left;
     width: 132px;
@@ -74,7 +80,6 @@ nav.mobile ul{
     background: #31475e;
     display: none;
     text-align: center;
-
 }
 
 nav.mobile li{
@@ -147,7 +152,6 @@ nav.mobile h3{
 
 
 .descricao_danki2 > .container{
-
     max-width: 960px;
 }
 .descricao_danki p{
@@ -184,6 +188,8 @@ nav.mobile h3{
 }
 
 img{
+    height: 250px;
+    background: #ff5f27;
     width: 45%;
     float: left;
     max-width:500px;
@@ -195,7 +201,8 @@ img{
 }
 
 .descricao_danki3 > .container{
-    background-image: url(../Img/bg2.jpg);
+    /*background-image: url(../Img/bg2.jpg);*/
+    background-color: #31475e;
     background-size: cover;
     min-height: 350px;
     max-width: 960px;
@@ -217,12 +224,75 @@ img{
     font-weight: lighter;
 }
 
+.servicos{
+    padding: 25px 0;
+}
+
+
+.servicos > .container{
+    max-width: 1000px;
+}
+.title_servicos{
+    text-align: center;
+}
+
+.title_servicos h3{ 
+    text-align: center;
+}
+
+
+.flex_servicos{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box_servicos{
+    background: white;
+    padding: 20px;
+    width: 33.3%;
+}
+
+.box_servicos > img{
+    height: 250px;
+    width: 100%;
+    background: #4b3a34;
+    float: none;
+
+}
+
+.box-servicos-wraper{
+    padding:10px;
+}
+
+.box-servicos-wraper h2{
+    color: #31475e;
+    font-size:20px ;
+    font-weight: normal;
+}
+
+.box-servicos-wraper p{
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 8px 0;
+    color: #6a7c92;
+
+}
+
+.box-servicos-wraper a{
+    text-align: center;
+    display: block;
+    width: 120px;
+    color: #31475e;
+    padding: 5px 8px;
+    border-radius: 20px;
+    border: 1px solid #31475e;
+}
 @media screen and (max-width: 1024px){
     nav.desktop{ display: none; }
     nav.mobile{ display: block;}
 
-    .chamada-header{ text-align: center;
-    }
+    .chamada-header{ text-align: center; }
 
 
     .chamada-header  p{
