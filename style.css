@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -20,11 +19,16 @@
 /*header*/
 header{
     padding: 30px 0;
-    background: #d6d6d6;
+    background-image: url('../Img/bg.jpg');
+    min-width: 450px;
+    background-size: cover;
+    background-position: center;
 }
 
 .logo h1{
-    color: black;
+    position: relative;
+    z-index: 998;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     float: left;
     width: 132px;
@@ -47,15 +51,53 @@ nav.desktop  li{
 
 nav.desktop a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-nav.desktop li.btn-nav{
+nav li.btn-nav{
     padding: 3px 8px;
     border-radius: 28px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
 }
 
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+nav.mobile ul{  
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    padding: 70px 3px 10p ;
+    background: #31475e;
+    display: none;
+    text-align: center;
+
+}
+
+nav.mobile li{
+    padding: 10px 0;
+}
+nav.mobile li.btn-nav{
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+nav.mobile a{
+    display: block;
+   color: white;
+   text-decoration: none;
+}
+
+nav.mobile h3{
+    position: relative;
+    z-index: 999;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+}
 
 .chamada-header{
     padding: 110px 0;
@@ -64,18 +106,17 @@ nav.desktop li.btn-nav{
 
 .chamada-header h2{
     font-size: 47px;
-    max-width: 400px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: normal;
 }
 
 .chamada-header  p{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size:14px;
     max-width: 680px;
 }
 .chamada-header form{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .chamada-header input[type=email]{
@@ -87,6 +128,7 @@ nav.desktop li.btn-nav{
 }
 
 .chamada-header input[type=email]:focus{outline: 0;}
+
 .chamada-header input[type=submit]{
     display: inline-block;
     border-radius: 100px;
@@ -98,6 +140,124 @@ nav.desktop li.btn-nav{
    cursor:pointer;
 }
 
+.descricao_danki{
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.descricao_danki2 > .container{
+
+    max-width: 960px;
+}
+.descricao_danki p{
+    display: inline-block;
+    max-width: 600px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.descricao_danki2{
+    padding: 30px 0;
+}
+
+.texto_descricao{
+    float: left;
+    padding: 0 15px;
+    width: 55%;
+}
+
+.texto_descricao h3{
+    color: #31475e;
+    font-size: 26px;
+    line-height: 32px;
+}
 
 
 
+.texto_descricao p{
+    color: #31475e;
+    font-size: 19px;
+    margin-top: 15px;
+    line-height: 32px;
+}
+
+img{
+    width: 45%;
+    float: left;
+    max-width:500px;
+}
+
+
+.descricao_danki3{
+    padding: 30px 0 60px 0;
+}
+
+.descricao_danki3 > .container{
+    background-image: url(../Img/bg2.jpg);
+    background-size: cover;
+    min-height: 350px;
+    max-width: 960px;
+    position: relative;
+}
+
+.box-depoimento {
+    background: white;
+    position: absolute;
+    left: 50%;
+    width: 60%;
+    max-width: 500px;
+    padding: 10px 30px;
+    bottom: -30px;
+}
+
+.box-depoimento p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px){
+    nav.desktop{ display: none; }
+    nav.mobile{ display: block;}
+
+    .chamada-header{ text-align: center;
+    }
+
+
+    .chamada-header  p{
+    display: inline-block;
+    }
+
+    .chamada-header input[type=email]{
+        margin-bottom: 30px;
+    }
+
+    .box-depoimento {
+        background: white;
+        position: absolute;
+        left: 50%;
+        top: 50% ;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        max-width: 500px;
+        padding: 10px 30px;
+        bottom: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .texto_descricao{
+        width: 100%;
+    }
+
+    .descricao_danki2 img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        max-width: 500px;
+    }
+}
